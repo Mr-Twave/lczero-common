@@ -57,6 +57,8 @@ message Game {
   repeated float value = 3 [packed=true];
   repeated uint32 move = 4 [packed=true];
   optional Result result = 5;
+  repeated float sq_value = 6;
+  repeated Policy sq_policy = 7;
 }
 
 message Chunk {
