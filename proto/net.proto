@@ -142,6 +142,7 @@ message NetworkFormat {
     POLICY_UNKNOWN = 0;
     POLICY_CLASSICAL = 1;
     POLICY_CONVOLUTION = 2;
+    POLICY_CONVOLUTION_SP = 3;
   }
   optional PolicyFormat policy = 4;
 
@@ -151,6 +152,7 @@ message NetworkFormat {
     VALUE_CLASSICAL = 1;
     VALUE_WDL = 2;
     VALUE_PARAM = 3;
+    VALUE_WDL_SQ = 4;
   }
   optional ValueFormat value = 5;
 
@@ -193,6 +195,8 @@ message OnnxModel {
   optional string output_wdl = 5;
   optional string output_policy = 6;
   optional string output_mlh = 7;
+  optional string output_sq = 8;
+  optional string output_sp = 9;
 }
 
 message Net {
